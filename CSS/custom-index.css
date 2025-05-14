@@ -1,10 +1,24 @@
 body{
   background-image: url("../RESOURCES/IMG/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.custom-container{
+.custom-title-container{
   background-color: rgba(255, 255, 255, 0.068);
   margin-bottom: 15px;
   margin-top: 15px;
   padding: 10px;
+}
+
+.img-banner-custom{
+  width: calc(100dvw - 15px);
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.card-body{
+  
 }

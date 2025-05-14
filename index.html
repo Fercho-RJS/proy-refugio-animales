@@ -10,13 +10,16 @@
 
   <!--  CSS :: Bootstrap :: CDN  -->
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <!--  Page :: Favicon :: Style  -->
+  <link rel="shortcut icon" href="./RESOURCES/ICONS/favicon.png" type="image/x-icon">
 </head>
 
 <body id="contenedor-web" class="contenedor-web">
   <!--  Encabezado de la página  -->
   <section id="encabezado-web">
     <!--  Banner de presentación principal  -->
-    <img src="./RESOURCES/IMG/banner.png" alt="Banner de la página." class="vw-100">
+    <img src="./RESOURCES/IMG/banner.png" alt="Banner de la página." class="img-banner-custom">
 
     <!--  Navbar  -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -31,10 +34,10 @@
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre nosotros</a>
+              <a class="nav-link disabled" href="#">Sobre nosotros</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 ¡Nuestra web!
               </a>
               <ul class="dropdown-menu">
@@ -45,9 +48,12 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Acceder al S.G.R.A.</a>
+              <a class="nav-link disabled" aria-disabled="true">Galería</a>
             </li>
           </ul>
+          <div class="d-flex me-2 btn btn-secondary rounded-pill px-4">
+            <a class="nav-link" href="#" aria-disabled="true">Ingresar</a> 
+          </div>
         </div>
       </div>
     </nav>
@@ -55,8 +61,116 @@
   
   <!--  Sector de trabajo de la página  -->
   <section id="cuerpo-web">
-    <section id="contenedor-cuerpo-web" class="container-fluid custom-container">
+    <section class="container-fluid custom-title-container text-center">
       <h1 class="text-center">¡Bienvendio al Refugio de Animales!</h1>
+    </section>
+
+    <section class="container-fluid custom-dialog-container text-justify">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ex pariatur non? Natus nulla dolorem totam sit et. Illo quia a eveniet excepturi, earum aliquid optio velit deserunt ratione sed!
+      Voluptatem officiis modi deleniti veniam id nostrum et natus eveniet necessitatibus exercitationem porro nobis a, illo sunt illum nisi eius at nulla facilis facere consequatur! Eos explicabo magnam nesciunt alias.
+      Quasi, inventore eum illo ipsum at impedit vero molestiae doloremque omnis. Minus asperiores eligendi nam minima nostrum quidem vero iste rerum impedit! Numquam facilis iste illum beatae aut sit fuga!
+      Vitae corporis omnis ipsa cumque deserunt, molestias odio quos consequatur eos doloremque, quod hic amet id! Tempore qui fugit dolorum! Vitae, quas veritatis! Ea molestias rem veniam, voluptatum eius omnis!
+      Vero quas eius sit error! Itaque suscipit, quas et expedita aspernatur dicta dolore id neque vel ipsum totam asperiores quo quidem maxime sequi explicabo. Mollitia iure suscipit delectus ut excepturi!</p>
+    </section>
+
+    <section class="container-fluid custom-title-container text-center">
+      <h1 class="text-center">¿A qué nos dedicamos?</h1>
+    </section>
+
+    <section class="container-fluid custom-dialog-container text-justify">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ex pariatur non? Natus nulla dolorem totam sit et. Illo quia a eveniet excepturi, earum aliquid optio velit deserunt ratione sed!
+      Voluptatem officiis modi deleniti veniam id nostrum et natus eveniet necessitatibus exercitationem porro nobis a, illo sunt illum nisi eius at nulla facilis facere consequatur! Eos explicabo magnam nesciunt alias.
+      Quasi, inventore eum illo ipsum at impedit vero molestiae doloremque omnis. Minus asperiores eligendi nam minima nostrum quidem vero iste rerum impedit! Numquam facilis iste illum beatae aut sit fuga!
+      Vitae corporis omnis ipsa cumque deserunt, molestias odio quos consequatur eos doloremque, quod hic amet id! Tempore qui fugit dolorum! Vitae, quas veritatis! Ea molestias rem veniam, voluptatum eius omnis!
+      Vero quas eius sit error! Itaque suscipit, quas et expedita aspernatur dicta dolore id neque vel ipsum totam asperiores quo quidem maxime sequi explicabo. Mollitia iure suscipit delectus ut excepturi!</p>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ex pariatur non? Natus nulla dolorem totam sit et. Illo quia a eveniet excepturi, earum aliquid optio velit deserunt ratione sed!
+      Voluptatem officiis modi deleniti veniam id nostrum et natus eveniet necessitatibus exercitationem porro nobis a, illo sunt illum nisi eius at nulla facilis facere consequatur! Eos explicabo magnam nesciunt alias.
+      Quasi, inventore eum illo ipsum at impedit vero molestiae doloremque omnis. Minus asperiores eligendi nam minima nostrum quidem vero iste rerum impedit! Numquam facilis iste illum beatae aut sit fuga!
+      Vitae corporis omnis ipsa cumque deserunt, molestias odio quos consequatur eos doloremque, quod hic amet id! Tempore qui fugit dolorum! Vitae, quas veritatis! Ea molestias rem veniam, voluptatum eius omnis!
+      Vero quas eius sit error! Itaque suscipit, quas et expedita aspernatur dicta dolore id neque vel ipsum totam asperiores quo quidem maxime sequi explicabo. Mollitia iure suscipit delectus ut excepturi!</p>
+    </section>
+
+    <section class="container-fluid custom-title-container text-center">
+      <h1 class="text-center">¿Cuál es nuestro objetivo en la sociedad?</h1>
+    </section>
+
+    <section class="container-fluid custom-dialog-container">
+      <div class="row my-3 mx-auto gap-5 d-flex justify-content-center">
+        <div class="card col-12 col-xl-auto" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> 
+
+        <div class="card col-12 col-xl-auto" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> 
+
+        <div class="card col-12 col-xl-auto" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> 
+
+        <div class="card col-12 col-xl-auto" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> 
+      </div>
+
+      <div class="row my-3 mx-auto gap-5 d-flex justify-content-center">
+        <div class="card col-12 col-xl-auto" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> 
+
+        <div class="card col-12 col-xl-auto" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> 
+
+        <div class="card col-12 col-xl-auto" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> 
+
+        <div class="card col-12 col-xl-auto" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> 
+      </div>
     </section>
   </section>
 
