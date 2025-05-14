@@ -1,31 +1,71 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Refugio de Animales - San Cristobal</title>
 
-  <!--  CSS :: Bootstrap  -->
+  <!--  CSS :: Custom Index :: Style  -->
+  <link rel="stylesheet" href="./CSS/custom-index.css">
+
+  <!--  CSS :: Bootstrap :: CDN  -->
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body id="contenedor-web" class="contenedor-web">
   <!--  Encabezado de la página  -->
   <section id="encabezado-web">
+    <!--  Banner de presentación principal  -->
+    <img src="./RESOURCES/IMG/banner.png" alt="Banner de la página." class="vw-100">
 
+    <!--  Navbar  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./RESOURCES/IMG/isotipo.png" height="75" alt="Logotipo de la página web."></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ¡Nuestra web!
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Guía de cuidados para tu mascota</a></li>
+                <li><a class="dropdown-item" href="#">Noticias de la web</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">¿Viajas con tu mascota?</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Acceder al S.G.R.A.</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </section>
   
   <!--  Sector de trabajo de la página  -->
   <section id="cuerpo-web">
-
+    <section id="contenedor-cuerpo-web" class="container-fluid custom-container">
+      <h1 class="text-center">¡Bienvendio al Refugio de Animales!</h1>
+    </section>
   </section>
 
   <!--  Pie de la página  -->
-  <section id="footer-web">
-
+  <section id="footer-web" class="bg-body-tertiary small text-center p-2">
+    Todos los derechos reservados © 2025
   </section>
 </body>
 
-<!--  JS :: Bootstrap  -->
-<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--  JS :: Bootstrap :: CDN -->
+<script src="./NODE_MODULES/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </html>
